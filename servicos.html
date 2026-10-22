@@ -2,17 +2,21 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Serviços — Cronos Afiações</title>
-  <meta name="description" content="Conheça os serviços de afiação da Cronos Afiações: facas, tesouras, alicates, instrumentos de podologia, manicure e costura. Busca e entrega em Belo Horizonte.">
-  <meta property="og:title" content="Serviços — Cronos Afiações">
-  <meta property="og:description" content="Afiação profissional de facas, tesouras, alicates e instrumentos. Busca e entrega.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serviços e Preços — Afiação de Alicate e Ferramentas | Cronos Afiações</title>
+  <meta name="description" content="Tabela de preços da Cronos Afiações: alicate de cutícula R$ 15, tesoura de cabelo R$ 40, faca R$ 8 a R$ 15, espátula R$ 5. Coleta e entrega em BH.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Serviços e Preços — Cronos Afiações">
+  <meta property="og:description" content="Alicate de cutícula R$ 15. Tesouras, facas, espátulas e troca de mola. Coleta e entrega em Belo Horizonte.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/og-image.png">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='24' font-size='24'>⏱</text></svg>">
+  <meta property="og:url" content="https://cronosafiacoes.github.io/cronos-afiacoes/servicos.html">
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="canonical" href="https://cronosafiacoes.github.io/cronos-afiacoes/servicos.html">
+  <link rel="icon" type="image/png" href="img/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,189 +24,198 @@
   <!-- Header -->
   <header class="header">
     <div class="container">
-      <a href="index.html" class="logo">
-        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="18" cy="18" r="16" stroke="#1E3A8A" stroke-width="2"/>
-          <line x1="18" y1="6" x2="18" y2="18" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round"/>
-          <line x1="18" y1="18" x2="26" y2="22" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round"/>
-          <path d="M10 28 L18 18 L26 28" stroke="#1E3A8A" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
-        </svg>
-        <div class="logo-text">
-          Cronos Afiações
-          <span>Precisão que atravessa o tempo</span>
-        </div>
+      <a href="index.html" class="logo" aria-label="Cronos Afiações — Página inicial">
+        <img src="img/logo.png" alt="Cronos Afiações" width="150" height="46">
       </a>
-      <nav class="nav-links">
-        <a href="index.html">Início</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
+      <nav aria-label="Menu principal">
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html" class="active">Serviços</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
       </nav>
-      <button class="hamburger" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <a href="https://wa.me/5531989390637?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cronos%20Afi%C3%A7%C3%B5es%20e%20gostaria%20de%20consultar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%20para%20afiar%20uma%20ferramenta." class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Solicitar afiação</a>
+      <button class="hamburger" aria-label="Menu" id="hamburger"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-  <!-- Mobile Menu -->
-  <nav class="mobile-menu">
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Menu mobile">
     <a href="index.html">Início</a>
-    <a href="servicos.html">Serviços</a>
+    <a href="servicos.html" class="active">Serviços</a>
     <a href="sobre.html">Sobre</a>
     <a href="contato.html">Contato</a>
+    <a href="https://wa.me/5531989390637?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cronos%20Afi%C3%A7%C3%B5es%20e%20gostaria%20de%20consultar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%20para%20afiar%20uma%20ferramenta." class="btn btn-whatsapp" target="_blank" rel="noopener">Falar no WhatsApp</a>
   </nav>
 
-  <!-- Page Hero -->
-  <section class="page-hero">
-    <div class="container">
-      <h1>Nossos Serviços</h1>
-      <p>Afiação profissional de precisão para facas, tesouras, alicates e instrumentos de diversas áreas.</p>
-    </div>
-  </section>
-
-  <!-- Lista de Serviços -->
-  <section>
-    <div class="container">
-      <div class="observacao-topo">
-        <strong>Atendemos tanto uso doméstico quanto profissional</strong> — salões, clínicas de estética, podologia, cozinhas profissionais e ateliês de costura.
-      </div>
-
-      <div class="servicos-lista">
-        <div class="servico-card">
-          <div class="servico-card-header">
-            <div class="servico-card-icon">🔪</div>
-            <h3>Facas de Cozinha</h3>
-          </div>
-          <p>Afiação profissional para facas de cozinha domésticas e profissionais. Cortantes e precisas como novas.</p>
-        </div>
-
-        <div class="servico-card">
-          <div class="servico-card-header">
-            <div class="servico-card-icon">✂️</div>
-            <h3>Tesouras Domésticas</h3>
-          </div>
-          <p>Tesouras de uso geral, papel, tecido e multiuso. Recuperamos o corte original com afiação especializada.</p>
-        </div>
-
-        <div class="servico-card">
-          <div class="servico-card-header">
-            <div class="servico-card-icon">🪡</div>
-            <h3>Tesouras de Costureira</h3>
-          </div>
-          <p>Tesouras profissionais de costura e corte. Cuidado artesanal para manter a precisão do corte em tecidos finos.</p>
-        </div>
-
-        <div class="servico-card">
-          <div class="servico-card-header">
-            <div class="servico-card-icon">💅</div>
-            <h3>Alicates de Manicure e Pedicure</h3>
-          </div>
-          <p>Afiação de alicates profissionais de manicure e pedicure. Precisão e durabilidade para o trabalho diário.</p>
-        </div>
-
-        <div class="servico-card">
-          <div class="servico-card-header">
-            <div class="servico-card-icon">🦶</div>
-            <h3>Espátulas e Instrumentos de Podologia</h3>
-          </div>
-          <p>Instrumentos profissionais de podologia com afiação de precisão. Atendemos clínicas e profissionais autônomos.</p>
-        </div>
-
-        <div class="servico-card">
-          <div class="servico-card-header">
-            <div class="servico-card-icon">✨</div>
-            <h3>Outros Instrumentos Profissionais</h3>
-          </div>
-          <p>Instrumentos de estética, beleza e outros segmentos profissionais. Consulte-nos sobre seu instrumento.</p>
+  <main>
+    <!-- Page Hero -->
+    <section class="hero" style="padding:7rem 0 3rem">
+      <div class="container">
+        <div class="hero-content">
+          <span class="tag" style="color:rgba(255,255,255,0.7)">Tabela de preços</span>
+          <h1>Serviços e preços</h1>
+          <p>Valores claros e transparentes. Afiação de alicate de cutícula, tesouras, facas e outras ferramentas.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Como Funciona -->
-  <section class="como-funciona">
-    <div class="container">
-      <h2 class="section-title">Como Funciona</h2>
-      <p class="section-subtitle">Um processo simples, rápido e sem complicação.</p>
-      <div class="passos">
-        <div class="passo">
-          <div class="passo-numero">1</div>
+    <!-- Serviço Principal -->
+    <section>
+      <div class="container">
+        <div class="servico-destaque">
           <div>
-            <h4>Solicite pelo WhatsApp</h4>
-            <p>Entre em contato e informe os itens que deseja afiar.</p>
+            <span class="badge">Serviço principal</span>
+            <h3>Afiação de alicate de cutícula</h3>
+            <div class="preco">R$ 15 <small>por alicate</small></div>
+            <p>Afiação profissional para alicates de manicure e pedicure, com corte preciso e sem puxar a pele.</p>
+            <ul>
+              <li>Reparo da ponta do alicate incluído</li>
+              <li>Gravação do nome, quando aplicável</li>
+              <li>Atendimento para manicures, nail designers e podólogos</li>
+            </ul>
+            <a href="https://wa.me/5531989390637?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cronos%20Afi%C3%A7%C3%B5es%20e%20gostaria%20de%20afiar%20meus%20alicates.%20Poderia%20me%20informar%20como%20funciona%20a%20coleta%20no%20meu%20bairro?" class="btn btn-whatsapp" target="_blank" rel="noopener">Solicitar afiação pelo WhatsApp</a>
           </div>
-        </div>
-        <div class="passo">
-          <div class="passo-numero">2</div>
-          <div>
-            <h4>Buscamos seus itens</h4>
-            <p>Passamos no seu endereço para buscar os instrumentos.</p>
-          </div>
-        </div>
-        <div class="passo">
-          <div class="passo-numero">3</div>
-          <div>
-            <h4>Afiamos com equipamento profissional</h4>
-            <p>Cada instrumento recebe cuidado artesanal e afiação de precisão.</p>
-          </div>
-        </div>
-        <div class="passo">
-          <div class="passo-numero">4</div>
-          <div>
-            <h4>Entregamos em 1 a 2 dias úteis</h4>
-            <p>Seus itens são devolvidos afiados e prontos para uso.</p>
-          </div>
+          <div style="text-align:center;font-size:6rem;line-height:1" aria-hidden="true">💅</div>
         </div>
       </div>
+    </section>
 
-      <div class="preco-cta">
-        <p><strong>Orçamento sob consulta</strong> — entre em contato pelo WhatsApp para valores.</p>
-        <a href="https://wa.me/5531989390637?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20afia%C3%A7%C3%A3o" class="btn btn-whatsapp" target="_blank" rel="noopener">
-          Solicitar orçamento pelo WhatsApp
-        </a>
+    <!-- Demais serviços -->
+    <section style="padding-top:0">
+      <div class="container">
+        <h2 class="section-title" style="margin-bottom:2rem">Demais serviços</h2>
+        <div class="servicos-grid" style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr))">
+          <div class="servico-card">
+            <div class="ico" aria-hidden="true">💇</div>
+            <div class="info">
+              <h4>Tesoura de cabelo</h4>
+              <span class="preco-tag">R$ 40</span>
+            </div>
+          </div>
+          <div class="servico-card">
+            <div class="ico" aria-hidden="true">✂️</div>
+            <div class="info">
+              <h4>Tesoura comum</h4>
+              <span class="preco-tag">A partir de R$ 10</span>
+            </div>
+          </div>
+          <div class="servico-card">
+            <div class="ico" aria-hidden="true">🔪</div>
+            <div class="info">
+              <h4>Faca</h4>
+              <span class="preco-tag">R$ 8 a R$ 15</span>
+            </div>
+          </div>
+          <div class="servico-card">
+            <div class="ico" aria-hidden="true">🔪</div>
+            <div class="info">
+              <h4>Espátula</h4>
+              <span class="preco-tag">R$ 5</span>
+            </div>
+          </div>
+          <div class="servico-card">
+            <div class="ico" aria-hidden="true">🔧</div>
+            <div class="info">
+              <h4>Troca de mola Mundial</h4>
+              <span class="preco-tag">R$ 8</span>
+            </div>
+          </div>
+          <div class="servico-card">
+            <div class="ico" aria-hidden="true">🔧</div>
+            <div class="info">
+              <h4>Troca de mola paralela</h4>
+              <span class="preco-tag">R$ 5</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nota-precos">
+          <strong>Observação:</strong> os valores podem variar quando o serviço exigir avaliação da peça. Consulte pelo WhatsApp para confirmar o preço da sua ferramenta.
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Como funciona -->
+    <section class="como-funciona">
+      <div class="container">
+        <h2 class="section-title">Como funciona</h2>
+        <p class="section-subtitle">Simples e sem sair de casa ou do seu estabelecimento.</p>
+        <div class="passos">
+          <div class="passo">
+            <div class="passo-numero">1</div>
+            <div>
+              <h4>Entre em contato</h4>
+              <p>Chame no WhatsApp e diga que quer afiar seus alicates ou ferramentas.</p>
+            </div>
+          </div>
+          <div class="passo">
+            <div class="passo-numero">2</div>
+            <div>
+              <h4>Informe a quantidade e o bairro</h4>
+              <p>Diga quantas peças quer afiar e em qual bairro de BH você está.</p>
+            </div>
+          </div>
+          <div class="passo">
+            <div class="passo-numero">3</div>
+            <div>
+              <h4>Consulte e combine a coleta</h4>
+              <p>Verificamos a disponibilidade e combinamos o melhor dia e horário.</p>
+            </div>
+          </div>
+          <div class="passo">
+            <div class="passo-numero">4</div>
+            <div>
+              <h4>Receba afiado</h4>
+              <p>Devolvemos suas ferramentas afiadas, preferencialmente no dia seguinte.</p>
+            </div>
+          </div>
+        </div>
+        <p class="passo-nota">O agendamento está sujeito à confirmação da Cronos Afiações.</p>
+        <div class="preco-cta" style="margin-top:2rem">
+          <a href="https://wa.me/5531989390637?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cronos%20Afi%C3%A7%C3%B5es%20e%20gostaria%20de%20consultar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%20para%20afiar%20uma%20ferramenta." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">Consultar pelo WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <h4>Cronos Afiações</h4>
-          <p>Precisão que atravessa o tempo. Afiação profissional de facas, tesouras, alicates e instrumentos com busca e entrega.</p>
+          <a href="index.html" class="logo" aria-label="Cronos Afiações"><img src="img/logo.png" alt="Cronos Afiações" width="140" height="44"></a>
+          <p style="margin-top:0.75rem;max-width:300px">Afiação profissional de alicates de cutícula, tesouras, facas e ferramentas. Coleta e entrega em Belo Horizonte.</p>
         </div>
         <div class="footer-col">
-          <h4>Links Rápidos</h4>
-          <a href="index.html">Início</a>
-          <a href="servicos.html">Serviços</a>
-          <a href="sobre.html">Sobre</a>
+          <h4>Serviços</h4>
+          <a href="servicos.html">Alicate de cutícula</a>
+          <a href="servicos.html">Tesouras</a>
+          <a href="servicos.html">Facas</a>
+          <a href="servicos.html">Espátulas</a>
+          <a href="servicos.html">Troca de mola</a>
+        </div>
+        <div class="footer-col">
+          <h4>Informações</h4>
+          <a href="index.html#como">Como funciona</a>
+          <a href="index.html#coleta">Coleta e entrega</a>
+          <a href="index.html#faq">Dúvidas</a>
           <a href="contato.html">Contato</a>
         </div>
         <div class="footer-col">
           <h4>Contato</h4>
-          <a href="tel:+5531989390637">(31) 98939-0637</a>
-          <a href="mailto:cronosafiacoes@gmail.com">cronosafiacoes@gmail.com</a>
-          <a href="https://www.instagram.com/cronosafiacoes" target="_blank" rel="noopener">@cronosafiacoes</a>
-        </div>
-        <div class="footer-col">
-          <h4>Endereço</h4>
-          <p>Rua Curitiba, 715 — Galeria do Ouvidor, Loja 01, Joalheria Cruz</p>
+          <a href="https://wa.me/5531989390637" target="_blank" rel="noopener">(31) 98939-0637</a>
           <p>Belo Horizonte — MG</p>
+          <p>Coleta e entrega: 8h às 16h</p>
+          <p>WhatsApp: até as 18h</p>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span class="logo-footer">Cronos Afiações</span>
-        <p>&copy; 2026 Cronos Afiações. Todos os direitos reservados.</p>
-      </div>
+      <div class="footer-bottom">© <span id="ano">2026</span> Cronos Afiações • Belo Horizonte — MG. Todos os direitos reservados.</div>
     </div>
   </footer>
 
-  <!-- WhatsApp Float -->
-  <a href="https://wa.me/5531989390637?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20afia%C3%A7%C3%A3o" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <a href="https://wa.me/5531989390637?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cronos%20Afi%C3%A7%C3%B5es." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.5.7 4.9 2 7L3 29l6.6-2.2c2 1.1 4.2 1.7 6.4 1.7 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1.3 1.3-3.8-.3-.4c-1.1-1.8-1.7-3.8-1.7-5.9C5.3 9.8 10.1 5 16 5s10.7 4.8 10.7 10.6S21.9 26.2 16 26.2zm5.9-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
   </a>
 
   <script src="js/main.js"></script>

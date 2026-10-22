@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cronosafiacoes.github.io/cronos-afiacoes/sitemap.xml

@@ -2,17 +2,21 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato — Cronos Afiações</title>
-  <meta name="description" content="Entre em contato com a Cronos Afiações: WhatsApp, e-mail, formulário e endereço. Afiação profissional de facas, tesouras e alicates em Belo Horizonte.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato — Fale com a Cronos Afiações | WhatsApp (31) 98939-0637</title>
+  <meta name="description" content="Entre em contato com a Cronos Afiações. Afiação de alicate de cutícula por R$ 15. Coleta e entrega em Belo Horizonte. WhatsApp (31) 98939-0637.">
+  <meta name="robots" content="index, follow">
   <meta property="og:title" content="Contato — Cronos Afiações">
-  <meta property="og:description" content="Fale conosco para solicitar orçamento de afiação profissional.">
+  <meta property="og:description" content="Fale pelo WhatsApp e solicite a afiação de seus alicates. Coleta e entrega em BH.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/og-image.png">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='24' font-size='24'>⏱</text></svg>">
+  <meta property="og:url" content="https://cronosafiacoes.github.io/cronos-afiacoes/contato.html">
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="canonical" href="https://cronosafiacoes.github.io/cronos-afiacoes/contato.html">
+  <link rel="icon" type="image/png" href="img/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,192 +24,181 @@
   <!-- Header -->
   <header class="header">
     <div class="container">
-      <a href="index.html" class="logo">
-        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="18" cy="18" r="16" stroke="#1E3A8A" stroke-width="2"/>
-          <line x1="18" y1="6" x2="18" y2="18" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round"/>
-          <line x1="18" y1="18" x2="26" y2="22" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round"/>
-          <path d="M10 28 L18 18 L26 28" stroke="#1E3A8A" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
-        </svg>
-        <div class="logo-text">
-          Cronos Afiações
-          <span>Precisão que atravessa o tempo</span>
-        </div>
+      <a href="index.html" class="logo" aria-label="Cronos Afiações — Página inicial">
+        <img src="img/logo.png" alt="Cronos Afiações" width="150" height="46">
       </a>
-      <nav class="nav-links">
-        <a href="index.html">Início</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
+      <nav aria-label="Menu principal">
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html" class="active">Contato</a></li>
+        </ul>
       </nav>
-      <button class="hamburger" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <a href="https://wa.me/5531989390637?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cronos%20Afi%C3%A7%C3%B5es%20e%20gostaria%20de%20afiar%20meus%20alicates." class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Solicitar afiação</a>
+      <button class="hamburger" aria-label="Menu" id="hamburger"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-  <!-- Mobile Menu -->
-  <nav class="mobile-menu">
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Menu mobile">
     <a href="index.html">Início</a>
     <a href="servicos.html">Serviços</a>
     <a href="sobre.html">Sobre</a>
-    <a href="contato.html">Contato</a>
+    <a href="contato.html" class="active">Contato</a>
+    <a href="https://wa.me/5531989390637?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cronos%20Afi%C3%A7%C3%B5es%20e%20gostaria%20de%20afiar%20meus%20alicates." class="btn btn-whatsapp" target="_blank" rel="noopener">Falar no WhatsApp</a>
   </nav>
 
-  <!-- Page Hero -->
-  <section class="page-hero">
-    <div class="container">
-      <h1>Entre em Contato</h1>
-      <p>Solicite seu orçamento ou tire suas dúvidas. Estamos prontos para atender você.</p>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section>
-    <div class="container">
-      <div class="contato-grid">
-
-        <!-- Formulário -->
-        <div>
-          <h2 class="section-title" style="text-align:left">Envie sua mensagem</h2>
-          <p class="section-subtitle" style="text-align:left">Preencha o formulário abaixo e enviaremos sua mensagem pelo WhatsApp.</p>
-          <form id="contactForm">
-            <div class="form-group">
-              <label for="nome">Nome completo</label>
-              <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-            </div>
-            <div class="form-group">
-              <label for="telefone">Telefone / WhatsApp</label>
-              <input type="tel" id="telefone" name="telefone" placeholder="(31) 99999-9999" required>
-            </div>
-            <div class="form-group">
-              <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" name="mensagem" placeholder="Descreva o que você precisa afiar..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-whatsapp">Enviar mensagem pelo WhatsApp</button>
-          </form>
+  <main>
+    <!-- Page Hero -->
+    <section class="hero" style="padding:7rem 0 3rem">
+      <div class="container">
+        <div class="hero-content">
+          <span class="tag" style="color:rgba(255,255,255,0.7)">Contato</span>
+          <h1>Fale com a Cronos</h1>
+          <p>Atendimento pelo WhatsApp é a forma mais rápida de solicitar a afiação.</p>
         </div>
+      </div>
+    </section>
 
-        <!-- Informações -->
-        <div class="contato-info">
-          <h2 class="section-title" style="text-align:left">Informações de contato</h2>
-          <p class="section-subtitle" style="text-align:left">Prefere falar direto? Use um dos canais abaixo.</p>
+    <!-- Contato -->
+    <section class="contato">
+      <div class="container">
+        <div class="contato-grid">
 
-          <div class="info-item">
-            <div class="info-icon">📱</div>
-            <div>
-              <h4>WhatsApp / Telefone</h4>
-              <a href="tel:+5531989390637">(31) 98939-0637</a>
+          <!-- Informações -->
+          <div class="contato-info">
+            <h2 class="section-title" style="text-align:left;margin-bottom:1rem">Informações</h2>
+
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">📲</div>
+              <div>
+                <h4>WhatsApp</h4>
+                <a href="https://wa.me/5531989390637" target="_blank" rel="noopener">(31) 98939-0637</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">📍</div>
+              <div>
+                <h4>Área de atendimento</h4>
+                <p>Belo Horizonte — MG (bairro Castelo como base)</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">🕒</div>
+              <div>
+                <h4>Horários</h4>
+                <p>Coleta e entrega: 8h às 16h (seg. a dom.)<br>WhatsApp: até as 18h</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">💳</div>
+              <div>
+                <h4>Pagamento</h4>
+                <p>Pix, dinheiro, débito e crédito (acima de R$ 200)</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">💰</div>
+              <div>
+                <h4>Alicate de cutícula</h4>
+                <p style="font-size:1.1rem;font-weight:700;color:var(--azul)">R$ 15 por alicate</p>
+                <p>Reparo da ponta incluído</p>
+              </div>
+            </div>
+
+            <div class="mapa" style="margin-top:1rem">
+              <iframe src="https://www.google.com/maps?q=Bairro+Castelo,+Belo+Horizonte,+MG&output=embed" loading="lazy" title="Mapa do bairro Castelo, Belo Horizonte" width="100%" height="280" style="border:0;border-radius:10px"></iframe>
             </div>
           </div>
 
-          <div class="info-item">
-            <div class="info-icon">✉️</div>
-            <div>
-              <h4>E-mail</h4>
-              <a href="mailto:cronosafiacoes@gmail.com">cronosafiacoes@gmail.com</a>
-            </div>
+          <!-- Formulário -->
+          <div>
+            <h2 class="section-title" style="text-align:left;margin-bottom:0.5rem">Envie sua mensagem</h2>
+            <p class="section-subtitle" style="text-align:left;margin-bottom:1.5rem">Preencha e enviaremos pelo WhatsApp.</p>
+            <form id="contactForm" style="background:var(--cinza-50);padding:2rem;border-radius:var(--radius-lg)">
+              <div class="form-group">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone / WhatsApp</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(31) 99999-9999" required>
+              </div>
+              <div class="form-group">
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" name="bairro" placeholder="Ex.: Savassi">
+              </div>
+              <div class="form-group">
+                <label for="item">O que deseja afiar?</label>
+                <select id="item" name="item">
+                  <option value="Alicate de cutícula">Alicate de cutícula</option>
+                  <option value="Tesoura de cabelo">Tesoura de cabelo</option>
+                  <option value="Tesoura comum">Tesoura comum</option>
+                  <option value="Faca">Faca</option>
+                  <option value="Espátula">Espátula</option>
+                  <option value="Troca de mola">Troca de mola</option>
+                  <option value="Outra ferramenta">Outra ferramenta</option>
+                  <option value="Vários itens">Vários itens</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="qtd">Quantidade aproximada</label>
+                <input type="number" id="qtd" name="qtd" min="1" value="1">
+              </div>
+              <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Descreva o que você precisa..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-whatsapp" style="width:100%">Enviar pelo WhatsApp</button>
+            </form>
           </div>
 
-          <div class="info-item">
-            <div class="info-icon">📍</div>
-            <div>
-              <h4>Endereço</h4>
-              <p>Rua Curitiba, 715 — Galeria do Ouvidor, Loja 01, Joalheria Cruz<br>Belo Horizonte — MG</p>
-              <p><em>Atendemos também com busca e entrega a domicílio.</em></p>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="info-icon">🕐</div>
-            <div>
-              <h4>Horário de Funcionamento</h4>
-              <p>Segunda a Sexta: 09:00 às 18:00<br>Sábado: 09:00 às 13:00</p>
-              <p><em>Confirmar horários especiais posteriormente.</em></p>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="info-icon">📷</div>
-            <div>
-              <h4>Instagram</h4>
-              <a href="https://www.instagram.com/cronosafiacoes" target="_blank" rel="noopener">@cronosafiacoes</a>
-            </div>
-          </div>
-
-          <a href="https://wa.me/5531989390637?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20afia%C3%A7%C3%A3o" class="btn btn-whatsapp" target="_blank" rel="noopener" style="margin-top:0.5rem">
-            Falar no WhatsApp
-          </a>
         </div>
-
       </div>
-    </div>
-  </section>
-
-  <!-- Mapa -->
-  <section class="como-funciona">
-    <div class="container">
-      <h2 class="section-title">Nossa Localização</h2>
-      <p class="section-subtitle">Venha nos visitar ou solicite busca e entrega.</p>
-      <div class="mapa">
-        <!-- Trocar src pelo link de embed do Google Maps real -->
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.8!2d-43.935!3d-19.919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDU1JzA4LjAiUyA0M8KwNTYnMDYuMCJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Localização da Cronos Afiações">
-        </iframe>
-      </div>
-      <!-- 
-        INSTRUÇÃO: Para obter o iframe correto do Google Maps:
-        1. Acesse maps.google.com
-        2. Busque pelo endereço: Rua Curitiba, 715, Galeria do Ouvidor, Belo Horizonte
-        3. Clique em "Compartilhar" > "Incorporar um mapa"
-        4. Copie o código iframe e substitua acima
-      -->
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <h4>Cronos Afiações</h4>
-          <p>Precisão que atravessa o tempo. Afiação profissional de facas, tesouras, alicates e instrumentos com busca e entrega.</p>
+          <a href="index.html" class="logo" aria-label="Cronos Afiações"><img src="img/logo.png" alt="Cronos Afiações" width="140" height="44"></a>
+          <p style="margin-top:0.75rem;max-width:300px">Afiação profissional de alicates de cutícula, tesouras, facas e ferramentas. Coleta e entrega em Belo Horizonte.</p>
         </div>
         <div class="footer-col">
-          <h4>Links Rápidos</h4>
-          <a href="index.html">Início</a>
-          <a href="servicos.html">Serviços</a>
-          <a href="sobre.html">Sobre</a>
+          <h4>Serviços</h4>
+          <a href="servicos.html">Alicate de cutícula</a>
+          <a href="servicos.html">Tesouras</a>
+          <a href="servicos.html">Facas</a>
+          <a href="servicos.html">Espátulas</a>
+          <a href="servicos.html">Troca de mola</a>
+        </div>
+        <div class="footer-col">
+          <h4>Informações</h4>
+          <a href="index.html#como">Como funciona</a>
+          <a href="index.html#coleta">Coleta e entrega</a>
+          <a href="index.html#faq">Dúvidas</a>
           <a href="contato.html">Contato</a>
         </div>
         <div class="footer-col">
           <h4>Contato</h4>
-          <a href="tel:+5531989390637">(31) 98939-0637</a>
-          <a href="mailto:cronosafiacoes@gmail.com">cronosafiacoes@gmail.com</a>
-          <a href="https://www.instagram.com/cronosafiacoes" target="_blank" rel="noopener">@cronosafiacoes</a>
-        </div>
-        <div class="footer-col">
-          <h4>Endereço</h4>
-          <p>Rua Curitiba, 715 — Galeria do Ouvidor, Loja 01, Joalheria Cruz</p>
+          <a href="https://wa.me/5531989390637" target="_blank" rel="noopener">(31) 98939-0637</a>
           <p>Belo Horizonte — MG</p>
+          <p>Coleta e entrega: 8h às 16h</p>
+          <p>WhatsApp: até as 18h</p>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span class="logo-footer">Cronos Afiações</span>
-        <p>&copy; 2026 Cronos Afiações. Todos os direitos reservados.</p>
-      </div>
+      <div class="footer-bottom">© <span id="ano">2026</span> Cronos Afiações • Belo Horizonte — MG. Todos os direitos reservados.</div>
     </div>
   </footer>
 
-  <!-- WhatsApp Float -->
-  <a href="https://wa.me/5531989390637?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20afia%C3%A7%C3%A3o" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <a href="https://wa.me/5531989390637?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cronos%20Afi%C3%A7%C3%B5es." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.5.7 4.9 2 7L3 29l6.6-2.2c2 1.1 4.2 1.7 6.4 1.7 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1.3 1.3-3.8-.3-.4c-1.1-1.8-1.7-3.8-1.7-5.9C5.3 9.8 10.1 5 16 5s10.7 4.8 10.7 10.6S21.9 26.2 16 26.2zm5.9-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
   </a>
 
   <script src="js/main.js"></script>

@@ -1,544 +1,488 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cronos Afiações | Afiação profissional em Belo Horizonte</title>
-<meta name="description" content="Afiação profissional de facas, tesouras e alicates. Busca e entrega em Belo Horizonte.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --primaria:#f2a20c;      /* âmbar / faísca */
-    --primaria-esc:#c98200;
-    --escuro:#121417;        /* grafite */
-    --escuro2:#1c1f24;
-    --aco:#8a929c;           /* aço */
-    --claro:#f4f5f7;
-    --texto:#2a2d33;
-    --branco:#fff;
-    --raio:14px;
-    --sombra:0 10px 30px rgba(0,0,0,.12);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Afiação de Alicate de Cutícula em Belo Horizonte | Cronos Afiações</title>
+  <meta name="description" content="Afiação de alicate de cutícula por R$ 15 em Belo Horizonte. Coleta e entrega. Tesouras, facas e espátulas. Mais de 25 anos de experiência. Fale pelo WhatsApp.">
+  <meta name="keywords" content="afiação de alicate, afiar alicate de manicure, afiação de alicates Belo Horizonte, afiação de ferramentas, coleta e entrega alicates BH, Cronos Afiações">
+  <meta name="author" content="Cronos Afiações">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Afiação de Alicate de Cutícula em Belo Horizonte | Cronos Afiações">
+  <meta property="og:description" content="Afiação de alicate de cutícula por R$ 15. Coleta e entrega em Belo Horizonte. Mais de 25 anos de experiência.">
+  <meta property="og:url" content="https://cronosafiacoes.github.io/cronos-afiacoes/">
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Cronos Afiações">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cronos Afiações — Afiação de Alicate em BH">
+  <meta name="twitter:description" content="Afiação de alicate de cutícula por R$ 15. Coleta e entrega em Belo Horizonte.">
+
+  <link rel="canonical" href="https://cronosafiacoes.github.io/cronos-afiacoes/">
+  <link rel="icon" type="image/png" href="img/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Dados estruturados: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Cronos Afiações",
+    "description": "Afiação profissional de alicates de cutícula, tesouras, facas e ferramentas com coleta e entrega em Belo Horizonte.",
+    "url": "https://cronosafiacoes.github.io/cronos-afiacoes/",
+    "image": "img/logo.png",
+    "telephone": "+5531989390637",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Belo Horizonte",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Belo Horizonte"
+    },
+    "priceRange": "R$ 5 - R$ 40"
   }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{font-family:'Inter',sans-serif;color:var(--texto);background:var(--branco);line-height:1.65;overflow-x:hidden}
-  h1,h2,h3,h4{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.5px;line-height:1.15}
-  img{max-width:100%;display:block}
-  a{text-decoration:none;color:inherit}
-  .container{width:min(1180px,90%);margin:auto}
-  section{padding:90px 0}
-  .tag{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--primaria);margin-bottom:12px}
-  .titulo{text-align:center;max-width:700px;margin:0 auto 55px}
-  .titulo h2{font-size:clamp(1.9rem,4vw,2.7rem);color:var(--escuro)}
-  .titulo p{color:#666;margin-top:12px}
-  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--primaria);color:var(--escuro);font-weight:600;padding:15px 30px;border-radius:8px;transition:.3s;border:2px solid var(--primaria);cursor:pointer;font-size:1rem}
-  .btn:hover{background:var(--primaria-esc);border-color:var(--primaria-esc);transform:translateY(-2px)}
-  .btn-outline{background:transparent;color:var(--branco);border-color:rgba(255,255,255,.5)}
-  .btn-outline:hover{background:var(--branco);color:var(--escuro);border-color:var(--branco)}
-
-  /* HEADER */
-  header{position:fixed;inset:0 0 auto 0;z-index:100;padding:20px 0;transition:.3s}
-  header.rolou{background:rgba(18,20,23,.97);padding:12px 0;box-shadow:0 4px 20px rgba(0,0,0,.3)}
-  .nav{display:flex;align-items:center;justify-content:space-between}
-  .logo{display:flex;align-items:center}
-  .logo img{height:48px;width:auto}
-  .menu{display:flex;gap:30px;list-style:none}
-  .menu a{color:#ddd;font-size:.95rem;transition:.2s}
-  .menu a:hover{color:var(--primaria)}
-  .nav .btn{padding:11px 22px;font-size:.9rem}
-  .hamb{display:none;background:none;border:0;color:#fff;font-size:1.8rem;cursor:pointer}
-
-  /* HERO */
-  .hero{min-height:100vh;display:flex;align-items:center;color:var(--branco);
-    background:linear-gradient(110deg,rgba(18,20,23,.96) 40%,rgba(18,20,23,.6)),url('img/hero.jpg') center/cover;padding-top:100px}
-  .hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:center}
-  .hero h1{font-size:clamp(2.4rem,5.5vw,4rem);margin-bottom:20px}
-  .hero h1 span{color:var(--primaria)}
-  .hero p{font-size:1.15rem;color:#c9cdd3;max-width:540px;margin-bottom:32px}
-  .hero-btns{display:flex;gap:15px;flex-wrap:wrap}
-  .hero-selos{display:flex;gap:25px;margin-top:40px;flex-wrap:wrap}
-  .hero-selos div{display:flex;align-items:center;gap:10px;font-size:.92rem;color:#ddd}
-  .hero-selos b{color:var(--primaria);font-size:1.3rem}
-  .hero-img{position:relative}
-  .hero-img img{border-radius:var(--raio);box-shadow:0 20px 60px rgba(0,0,0,.5);aspect-ratio:4/5;object-fit:cover;width:100%;background:var(--escuro2)}
-  .selo{position:absolute;bottom:-20px;left:-25px;background:var(--primaria);color:var(--escuro);padding:18px 22px;border-radius:12px;font-weight:600;box-shadow:var(--sombra)}
-  .selo strong{display:block;font-family:'Oswald';font-size:1.4rem}
-
-  /* NÚMEROS */
-  .numeros{background:var(--primaria);padding:45px 0}
-  .numeros .container{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;color:var(--escuro)}
-  .numeros h3{font-size:2.6rem}
-  .numeros p{font-weight:500}
-
-  /* SOBRE */
-  .sobre-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center}
-  .sobre-img img{border-radius:var(--raio);aspect-ratio:1/1;object-fit:cover;width:100%;background:var(--claro)}
-  .sobre h2{font-size:clamp(1.9rem,4vw,2.6rem);color:var(--escuro);margin-bottom:20px}
-  .sobre p{color:#555;margin-bottom:16px}
-  .lista{list-style:none;margin:25px 0 30px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-  .lista li{display:flex;gap:10px;align-items:flex-start}
-  .lista li::before{content:"✔";color:var(--primaria);font-weight:700}
-
-  /* SERVIÇOS */
-  .servicos{background:var(--claro)}
-  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-  .card{background:var(--branco);border-radius:var(--raio);overflow:hidden;box-shadow:var(--sombra);transition:.35s;display:flex;flex-direction:column}
-  .card:hover{transform:translateY(-8px)}
-  .card .ico{height:170px;background:linear-gradient(135deg,var(--escuro),var(--escuro2));display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative;overflow:hidden}
-  .card .ico img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
-  .card .ico span{position:relative}
-  .card-body{padding:26px;flex:1;display:flex;flex-direction:column}
-  .card h3{font-size:1.3rem;color:var(--escuro);margin-bottom:10px}
-  .card p{color:#666;font-size:.95rem;flex:1}
-  .card a{margin-top:18px;color:var(--primaria-esc);font-weight:600}
-  .card a:hover{color:var(--escuro)}
-
-  /* DESTAQUE */
-  .destaque{background:linear-gradient(rgba(18,20,23,.88),rgba(18,20,23,.88)),url('img/destaque.jpg') center/cover fixed;color:var(--branco);text-align:center}
-  .destaque h2{font-size:clamp(2rem,4.5vw,3rem);margin-bottom:15px}
-  .destaque h2 span{color:var(--primaria)}
-  .destaque p{color:#c9cdd3;max-width:620px;margin:0 auto 30px;font-size:1.1rem}
-
-  /* COMO FUNCIONA */
-  .passos{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;counter-reset:p}
-  .passo{text-align:center;padding:35px 22px;border-radius:var(--raio);border:1px solid #e6e8eb;position:relative;transition:.3s}
-  .passo:hover{border-color:var(--primaria);box-shadow:var(--sombra)}
-  .passo::before{counter-increment:p;content:counter(p);display:flex;align-items:center;justify-content:center;width:56px;height:56px;margin:0 auto 18px;border-radius:50%;background:var(--escuro);color:var(--primaria);font-family:'Oswald';font-size:1.5rem}
-  .passo h3{font-size:1.15rem;margin-bottom:8px;color:var(--escuro)}
-  .passo p{color:#666;font-size:.93rem}
-
-  /* PARA QUEM */
-  .publico{background:var(--escuro);color:var(--branco)}
-  .publico .titulo h2{color:var(--branco)}
-  .publico .titulo p{color:#aab0b8}
-  .pub-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-  .pub{background:var(--escuro2);padding:32px 24px;border-radius:var(--raio);border-bottom:3px solid var(--primaria);transition:.3s}
-  .pub:hover{transform:translateY(-6px)}
-  .pub div{font-size:2.4rem;margin-bottom:12px}
-  .pub h3{font-size:1.15rem;margin-bottom:8px}
-  .pub p{color:#aab0b8;font-size:.92rem}
-
-  /* DEPOIMENTOS */
-  .depo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-  .depo{background:var(--claro);padding:32px;border-radius:var(--raio);position:relative}
-  .depo::before{content:"“";position:absolute;top:5px;right:22px;font-size:5rem;color:var(--primaria);opacity:.35;font-family:Georgia}
-  .estrelas{color:var(--primaria);margin-bottom:12px}
-  .depo p{color:#555;font-style:italic;margin-bottom:18px}
-  .depo strong{color:var(--escuro)}
-  .depo small{display:block;color:#888}
-
-  /* FAQ */
-  .faq{background:var(--claro)}
-  .faq-lista{max-width:800px;margin:auto}
-  .faq-item{background:var(--branco);border-radius:10px;margin-bottom:14px;box-shadow:0 3px 12px rgba(0,0,0,.05);overflow:hidden}
-  .faq-q{width:100%;text-align:left;background:none;border:0;padding:20px 24px;font-size:1.02rem;font-weight:600;color:var(--escuro);cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-family:inherit}
-  .faq-q::after{content:"+";font-size:1.5rem;color:var(--primaria);transition:.3s}
-  .faq-item.ativo .faq-q::after{transform:rotate(45deg)}
-  .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
-  .faq-a p{padding:0 24px 20px;color:#666}
-
-  /* CONTATO */
-  .contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
-  .info{display:flex;flex-direction:column;gap:20px}
-  .info-box{display:flex;gap:16px;align-items:flex-start;background:var(--claro);padding:22px;border-radius:var(--raio)}
-  .info-box div:first-child{font-size:1.6rem;background:var(--escuro);width:52px;height:52px;flex-shrink:0;border-radius:10px;display:flex;align-items:center;justify-content:center}
-  .info-box h4{color:var(--escuro);margin-bottom:4px;font-size:1.05rem}
-  .info-box p{color:#666;font-size:.94rem}
-  .mapa iframe{width:100%;height:220px;border:0;border-radius:var(--raio)}
-  form{background:var(--escuro);padding:40px;border-radius:var(--raio);color:var(--branco)}
-  form h3{font-size:1.6rem;margin-bottom:6px}
-  form > p{color:#aab0b8;margin-bottom:24px;font-size:.95rem}
-  .campo{margin-bottom:16px}
-  .campo label{display:block;font-size:.88rem;margin-bottom:6px;color:#ccc}
-  .campo input,.campo select,.campo textarea{width:100%;padding:13px 15px;border-radius:8px;border:1px solid #33373e;background:var(--escuro2);color:#fff;font-family:inherit;font-size:.95rem}
-  .campo input:focus,.campo select:focus,.campo textarea:focus{outline:none;border-color:var(--primaria)}
-  .duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  form .btn{width:100%;justify-content:center;margin-top:8px}
-
-  /* FOOTER */
-  footer{background:#0b0c0e;color:#9aa0a8;padding:60px 0 25px}
-  .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;margin-bottom:40px}
-  footer h4{color:var(--branco);margin-bottom:16px;font-size:1.05rem}
-  footer ul{list-style:none}
-  footer li{margin-bottom:8px}
-  footer a:hover{color:var(--primaria)}
-  .copy{border-top:1px solid #222;padding-top:22px;text-align:center;font-size:.85rem}
-
-  /* WHATS FLUTUANTE */
-  .whats{position:fixed;right:22px;bottom:22px;width:62px;height:62px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(37,211,102,.5);z-index:99;animation:pulso 2s infinite}
-  .whats svg{width:32px;fill:#fff}
-  @keyframes pulso{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
-
-  /* ANIMAÇÃO */
-  .revelar{opacity:0;transform:translateY(40px);transition:1s ease}
-  .revelar.ativo{opacity:1;transform:none}
-
-  /* RESPONSIVO */
-  @media(max-width:980px){
-    .hero-grid,.sobre-grid,.contato-grid{grid-template-columns:1fr}
-    .hero-img{max-width:420px;margin:auto}
-    .cards,.depo-grid{grid-template-columns:1fr 1fr}
-    .passos,.pub-grid,.numeros .container{grid-template-columns:1fr 1fr}
-    .foot-grid{grid-template-columns:1fr}
-  }
-  @media(max-width:768px){
-    .hamb{display:block}
-    .nav .btn{display:none}
-    .menu{position:fixed;top:0;right:-100%;width:75%;height:100vh;background:var(--escuro);flex-direction:column;padding:90px 30px;gap:24px;transition:.35s}
-    .menu.aberto{right:0}
-    .menu a{font-size:1.1rem}
-    section{padding:70px 0}
-  }
-  @media(max-width:560px){
-    .cards,.depo-grid,.passos,.pub-grid,.lista,.duo{grid-template-columns:1fr}
-    .selo{left:10px}
-    form{padding:28px}
-  }
-</style>
+  </script>
 </head>
 <body>
 
 <!-- HEADER -->
-<header id="topo">
-  <div class="container nav">
-    <a href="#" class="logo"><img src="img/logo.png" alt="Cronos Afiações" style="height:48px"></a>
-    <ul class="menu" id="menu">
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#como">Como funciona</a></li>
-      <li><a href="#depoimentos">Depoimentos</a></li>
-      <li><a href="#faq">Dúvidas</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-    <a href="https://wa.me/5531989390637?text=Olá!%20Quero%20afiar%20minhas%20ferramentas." class="btn" target="_blank">Solicitar coleta</a>
-    <button class="hamb" id="hamb" aria-label="Abrir menu">☰</button>
+<header class="header" id="topo">
+  <div class="container">
+    <a href="index.html" class="logo" aria-label="Cronos Afiações — Página inicial">
+      <img src="img/logo.png" alt="Cronos Afiações — Afiação profissional" width="150" height="46">
+    </a>
+    <nav aria-label="Menu principal">
+      <ul class="nav-links">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#como">Como funciona</a></li>
+        <li><a href="#coleta">Coleta e entrega</a></li>
+        <li><a href="#faq">Dúvidas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <a href="https://wa.me/5531989390637?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cronos%20Afi%C3%A7%C3%B5es%20e%20gostaria%20de%20afiar%20meus%20alicates.%20Poderia%20me%20informar%20como%20funciona%20a%20coleta%20no%20meu%20bairro?" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Solicitar afiação</a>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
+<!-- Mobile Menu -->
+<nav class="mobile-menu" id="mobileMenu" aria-label="Menu mobile">
+  <a href="#servicos">Serviços</a>
+  <a href="#como">Como funciona</a>
+  <a href="#coleta">Coleta e entrega</a>
+  <a href="#faq">Dúvidas</a>
+  <a href="#contato">Contato</a>
+  <a href="https://wa.me/5531989390637?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cronos%20Afi%C3%A7%C3%B5es%20e%20gostaria%20de%20afiar%20meus%20alicates.%20Poderia%20me%20informar%20como%20funciona%20a%20coleta%20no%20meu%20bairro?" class="btn btn-whatsapp" target="_blank" rel="noopener">Solicitar afiação pelo WhatsApp</a>
+</nav>
+
+<main>
+
 <!-- HERO -->
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="revelar">
-      <span class="tag">Afiação profissional • Belo Horizonte</span>
-      <h1>Seu fio <span>de volta</span> como novo</h1>
-      <p>Afiação profissional de facas, tesouras e alicates com acabamento preciso. Nós buscamos e entregamos no seu endereço em Belo Horizonte.</p>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container">
+    <div class="hero-content">
+      <span class="tag" style="color:rgba(255,255,255,0.7)">Afiação profissional • Belo Horizonte</span>
+      <h1 id="hero-title">Afiação de alicates com praticidade para sua rotina.</h1>
+      <div class="preco-destaque">Afiamos seu alicate de cutícula por R$ 15</div>
+      <p>A Cronos Afiações cuida dos seus alicates de cutícula e outras ferramentas, com serviço especializado e coleta e entrega em Belo Horizonte, conforme as condições de atendimento.</p>
       <div class="hero-btns">
-        <a href="https://wa.me/5531989390637?text=Olá!%20Quero%20agendar%20uma%20coleta." class="btn" target="_blank">📲 Agendar coleta grátis</a>
-        <a href="#servicos" class="btn btn-outline">Ver serviços</a>
+        <a href="https://wa.me/5531989390637?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cronos%20Afi%C3%A7%C3%B5es%20e%20gostaria%20de%20afiar%20meus%20alicates.%20Poderia%20me%20informar%20como%20funciona%20a%20coleta%20no%20meu%20bairro?" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">Solicitar afiação pelo WhatsApp</a>
+        <a href="#servicos" class="btn btn-outline-light btn-lg">Conhecer nossos serviços</a>
       </div>
-      <div class="hero-selos">
-        <div><b>🚚</b> Busca e entrega</div>
-        <div><b>⚡</b> Entrega rápida</div>
-        <div><b>🛡️</b> Garantia no serviço</div>
-      </div>
-    </div>
-    <div class="hero-img revelar">
-      <img src="img/afiacao.jpg" alt="Afiação profissional de faca">
-      <div class="selo"><strong>Fio de navalha</strong>Acabamento profissional</div>
+      <p style="font-size:0.82rem;opacity:0.6;margin-bottom:0">Coleta e entrega mediante agendamento e condições de atendimento.</p>
     </div>
   </div>
 </section>
 
-<!-- NÚMEROS -->
-<div class="numeros">
+<!-- BENEFÍCIOS -->
+<div class="beneficios-strip" aria-label="Benefícios">
   <div class="container">
-    <div><h3 class="contador" data-alvo="5000">0</h3><p>Peças afiadas</p></div>
-    <div><h3 class="contador" data-alvo="800">0</h3><p>Clientes atendidos</p></div>
-    <div><h3 class="contador" data-alvo="10">0</h3><p>Anos de experiência</p></div>
-    <div><h3 class="contador" data-alvo="100">0</h3><p>% de satisfação</p></div>
+    <div class="beneficio-item">
+      <div class="icon">💅</div>
+      <p><strong>Mais de 25 anos</strong> de experiência</p>
+    </div>
+    <div class="beneficio-item">
+      <div class="icon">🚚</div>
+      <p><strong>Coleta e entrega</strong> em Belo Horizonte</p>
+    </div>
+    <div class="beneficio-item">
+      <div class="icon">🔧</div>
+      <p><strong>Reparo da ponta</strong> incluído na afiação</p>
+    </div>
+    <div class="beneficio-item">
+      <div class="icon">📍</div>
+      <p><strong>Bairro Castelo</strong> — base de atendimento</p>
+    </div>
   </div>
 </div>
 
-<!-- SOBRE -->
-<section class="sobre" id="sobre">
-  <div class="container sobre-grid">
-    <div class="sobre-img revelar"><img src="img/sobre.jpg" alt="Oficina Cronos Afiações"></div>
-    <div class="revelar">
-      <span class="tag">Quem somos</span>
-      <h2>Precisão em cada fio</h2>
-      <p>A Cronos Afiações é especializada em devolver o corte original às suas ferramentas. Trabalhamos com técnica e equipamentos adequados para cada tipo de lâmina, respeitando o ângulo e o material de cada peça.</p>
-      <p>Você não precisa sair de casa: buscamos suas peças, afiamos com cuidado e entregamos prontas para uso.</p>
-      <ul class="lista">
-        <li>Busca e entrega em BH</li>
-        <li>Respeito ao ângulo original</li>
-        <li>Atendimento residencial e comercial</li>
-        <li>Preço justo e transparente</li>
-        <li>Peças tratadas com cuidado</li>
-        <li>Garantia no serviço</li>
-      </ul>
-      <a href="https://wa.me/5531989390637" class="btn" target="_blank">Fale com a gente</a>
-    </div>
-  </div>
-</section>
-
 <!-- SERVIÇOS -->
-<section class="servicos" id="servicos">
+<section class="servicos" id="servicos" aria-labelledby="servicos-title">
   <div class="container">
-    <div class="titulo revelar">
-      <span class="tag">Serviços</span>
-      <h2>O que afiamos</h2>
-      <p>Do uso doméstico ao profissional, cada peça recebe o tratamento certo.</p>
-    </div>
-    <div class="cards">
-      <div class="card revelar">
-        <div class="ico"><img src="img/facas-cozinha.jpg" alt=""><span>🔪</span></div>
-        <div class="card-body">
-          <h3>Facas de cozinha</h3>
-          <p>Facas do dia a dia, de churrasco e de pão com corte renovado e seguro para uso em casa.</p>
-          <a href="https://wa.me/5531989390637?text=Olá!%20Quero%20afiar%20facas%20de%20cozinha." target="_blank">Solicitar orçamento →</a>
-        </div>
-      </div>
-      <div class="card revelar">
-        <div class="ico"><img src="img/facas-profissionais.jpg" alt=""><span>👨‍🍳</span></div>
-        <div class="card-body">
-          <h3>Facas profissionais</h3>
-          <p>Facas de chef, japonesas, de açougue e de restaurante, afiadas de acordo com o tipo de aço e o uso.</p>
-          <a href="https://wa.me/5531989390637?text=Olá!%20Quero%20afiar%20facas%20profissionais." target="_blank">Solicitar orçamento →</a>
-        </div>
-      </div>
-      <div class="card revelar">
-        <div class="ico"><img src="img/tesouras.jpg" alt=""><span>✂️</span></div>
-        <div class="card-body">
-          <h3>Tesouras</h3>
-          <p>Tesouras domésticas, de costura, de tecido e de cozinha com corte limpo do começo ao fim da lâmina.</p>
-          <a href="https://wa.me/5531989390637?text=Olá!%20Quero%20afiar%20tesouras." target="_blank">Solicitar orçamento →</a>
-        </div>
-      </div>
-      <div class="card revelar">
-        <div class="ico"><img src="img/tesouras-cabelo.jpg" alt=""><span>💇</span></div>
-        <div class="card-body">
-          <h3>Tesouras de cabeleireiro</h3>
-          <p>Afiação cuidadosa para tesouras de corte e desbaste, mantendo a precisão que o profissional exige.</p>
-          <a href="https://wa.me/5531989390637?text=Olá!%20Quero%20afiar%20tesouras%20de%20cabeleireiro." target="_blank">Solicitar orçamento →</a>
-        </div>
-      </div>
-      <div class="card revelar">
-        <div class="ico"><img src="img/alicates.jpg" alt=""><span>💅</span></div>
-        <div class="card-body">
-          <h3>Alicates de cutícula</h3>
-          <p>Alicates de manicure e podologia afiados com precisão para um corte macio, sem puxar a pele.</p>
-          <a href="https://wa.me/5531989390637?text=Olá!%20Quero%20afiar%20alicates." target="_blank">Solicitar orçamento →</a>
-        </div>
-      </div>
-      <div class="card revelar">
-        <div class="ico"><img src="img/outros.jpg" alt=""><span>🛠️</span></div>
-        <div class="card-body">
-          <h3>Outras ferramentas</h3>
-          <p>Tesouras de jardinagem, podões e outras lâminas. Mande uma foto e consulte a gente.</p>
-          <a href="https://wa.me/5531989390637?text=Olá!%20Quero%20consultar%20a%20afiação%20de%20outra%20ferramenta." target="_blank">Consultar →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    <span class="tag">Serviços e preços</span>
+    <h2 class="section-title" id="servicos-title">O que afiamos</h2>
+    <p class="section-subtitle">Alicate de cutícula é nosso serviço principal. Também trabalhamos com tesouras, facas e outras ferramentas.</p>
 
-<!-- DESTAQUE -->
-<section class="destaque">
-  <div class="container revelar">
-    <span class="tag">Comodidade</span>
-    <h2>Nós <span>buscamos</span> e <span>entregamos</span> para você</h2>
-    <p>Chame no WhatsApp, agende o melhor horário e receba suas ferramentas afiadas sem sair de casa ou do seu estabelecimento.</p>
-    <a href="https://wa.me/5531989390637?text=Olá!%20Quero%20agendar%20uma%20coleta." class="btn" target="_blank">🚚 Agendar coleta agora</a>
+    <!-- Destaque: Alicate -->
+    <div class="servico-destaque">
+      <div>
+        <span class="badge">Serviço principal</span>
+        <h3>Afiação de alicate de cutícula</h3>
+        <div class="preco">R$ 15 <small>por alicate</small></div>
+        <p>Afiação profissional para alicates de manicure e pedicure, com corte preciso e sem puxar a pele.</p>
+        <ul>
+          <li>Reparo da ponta do alicate incluído</li>
+          <li>Gravação do nome, quando aplicável</li>
+          <li>Atendimento para manicures, nail designers e podólogos</li>
+        </ul>
+        <a href="https://wa.me/5531989390637?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cronos%20Afi%C3%A7%C3%B5es%20e%20gostaria%20de%20afiar%20meus%20alicates.%20Poderia%20me%20informar%20como%20funciona%20a%20coleta%20no%20meu%20bairro?" class="btn btn-whatsapp" target="_blank" rel="noopener">Solicitar afiação pelo WhatsApp</a>
+      </div>
+      <div style="text-align:center;font-size:6rem;line-height:1" aria-hidden="true">💅</div>
+    </div>
+
+    <!-- Demais serviços -->
+    <div class="servicos-grid">
+      <div class="servico-card">
+        <div class="ico" aria-hidden="true">💇</div>
+        <div class="info">
+          <h4>Tesoura de cabelo</h4>
+          <span class="preco-tag">R$ 40</span>
+        </div>
+      </div>
+      <div class="servico-card">
+        <div class="ico" aria-hidden="true">✂️</div>
+        <div class="info">
+          <h4>Tesoura comum</h4>
+          <span class="preco-tag">A partir de R$ 10</span>
+        </div>
+      </div>
+      <div class="servico-card">
+        <div class="ico" aria-hidden="true">🔪</div>
+        <div class="info">
+          <h4>Faca</h4>
+          <span class="preco-tag">R$ 8 a R$ 15</span>
+        </div>
+      </div>
+      <div class="servico-card">
+        <div class="ico" aria-hidden="true">🔪</div>
+        <div class="info">
+          <h4>Espátula</h4>
+          <span class="preco-tag">R$ 5</span>
+        </div>
+      </div>
+      <div class="servico-card">
+        <div class="ico" aria-hidden="true">🔧</div>
+        <div class="info">
+          <h4>Troca de mola Mundial</h4>
+          <span class="preco-tag">R$ 8</span>
+        </div>
+      </div>
+      <div class="servico-card">
+        <div class="ico" aria-hidden="true">🔧</div>
+        <div class="info">
+          <h4>Troca de mola paralela</h4>
+          <span class="preco-tag">R$ 5</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="nota-precos">
+      Os valores podem variar quando o serviço exigir avaliação da peça. Consulte pelo WhatsApp para confirmar o preço da sua ferramenta.
+    </div>
   </div>
 </section>
 
 <!-- COMO FUNCIONA -->
-<section id="como">
+<section class="como-funciona" id="como" aria-labelledby="como-title">
   <div class="container">
-    <div class="titulo revelar">
-      <span class="tag">Passo a passo</span>
-      <h2>Como funciona</h2>
-      <p>Simples, rápido e sem sair de casa.</p>
-    </div>
+    <span class="tag">Passo a passo</span>
+    <h2 class="section-title" id="como-title">Como funciona</h2>
+    <p class="section-subtitle">Simples e sem sair de casa ou do seu estabelecimento.</p>
+
     <div class="passos">
-      <div class="passo revelar"><h3>Chame no WhatsApp</h3><p>Diga quais peças quer afiar e a quantidade de cada uma.</p></div>
-      <div class="passo revelar"><h3>Buscamos</h3><p>Agendamos a coleta no seu endereço, no dia e horário combinados.</p></div>
-      <div class="passo revelar"><h3>Afiamos</h3><p>Cada peça é afiada com a técnica certa e passa por um teste de corte.</p></div>
-      <div class="passo revelar"><h3>Entregamos</h3><p>Suas ferramentas voltam prontas para uso, embaladas com segurança.</p></div>
+      <div class="passo">
+        <div class="passo-numero">1</div>
+        <div>
+          <h4>Entre em contato</h4>
+          <p>Chame no WhatsApp e diga que quer afiar seus alicates ou ferramentas.</p>
+        </div>
+      </div>
+      <div class="passo">
+        <div class="passo-numero">2</div>
+        <div>
+          <h4>Informe a quantidade e o bairro</h4>
+          <p>Diga quantas peças quer afiar e em qual bairro de Belo Horizonte você está.</p>
+        </div>
+      </div>
+      <div class="passo">
+        <div class="passo-numero">3</div>
+        <div>
+          <h4>Consulte e combine a coleta</h4>
+          <p>Verificamos a disponibilidade e combinamos o melhor dia e horário para a coleta.</p>
+        </div>
+      </div>
+      <div class="passo">
+        <div class="passo-numero">4</div>
+        <div>
+          <h4>Receba afiado</h4>
+          <p>Devolvemos suas ferramentas afiadas, preferencialmente no dia seguinte à coleta.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="passo-nota">O agendamento está sujeito à confirmação da Cronos Afiações.</p>
+  </div>
+</section>
+
+<!-- COLETA E ENTREGA -->
+<section class="coleta-entrega" id="coleta" aria-labelledby="coleta-title">
+  <div class="container">
+    <span class="tag">Condições de atendimento</span>
+    <h2 class="section-title" id="coleta-title">Coleta e entrega</h2>
+    <p class="section-subtitle">Entenda como funciona o buscamos e entregamos em Belo Horizonte.</p>
+
+    <div class="regras-grid">
+      <div class="regra-card gratis">
+        <h4>🚚 Frete grátis</h4>
+        <p>Pedidos com <strong>mais de 10 alicates</strong> têm coleta e entrega grátis em Belo Horizonte.</p>
+      </div>
+      <div class="regra-card">
+        <h4>📍 Pedidos com menos de 5 peças</h4>
+        <p>Para pedidos com menos de 5 peças, a coleta está restrita às regiões próximas, de até aproximadamente 4 km do bairro Castelo, em Belo Horizonte.</p>
+      </div>
+      <div class="regra-card atencao">
+        <h4>💰 Taxa de deslocamento</h4>
+        <p>Quando aplicável, a taxa de deslocamento é de <strong>R$ 15</strong> pelo trajeto de ida e volta. A condição depende da quantidade de peças e da região.</p>
+      </div>
+    </div>
+
+    <div class="nota-precos" style="margin-bottom:2rem">
+      <strong>Observação:</strong> para pedidos de 5 a 10 peças, consulte a disponibilidade de coleta pelo WhatsApp. O prazo preferencial de entrega é o dia seguinte à coleta, conforme agendamento e disponibilidade.
+    </div>
+
+    <div class="coleta-cta">
+      <a href="https://wa.me/5531989390637?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20a%20coleta%20e%20entrega%20da%20Cronos%20Afi%C3%A7%C3%B5es.%20Meu%20bairro%20%C3%A9:%20_____.'%20Quantidade%20de%20pe%C3%A7as:%20_____." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">Consulte a coleta no seu bairro</a>
     </div>
   </div>
 </section>
 
-<!-- PARA QUEM -->
-<section class="publico">
+<!-- POR QUE ESCOLHER -->
+<section class="porque-escolher" aria-labelledby="porque-title">
   <div class="container">
-    <div class="titulo revelar">
-      <span class="tag">Atendemos</span>
-      <h2>Para quem é</h2>
-      <p>Atendemos clientes residenciais e profissionais em Belo Horizonte.</p>
-    </div>
-    <div class="pub-grid">
-      <div class="pub revelar"><div>🏠</div><h3>Residências</h3><p>Facas e tesouras da sua casa com corte de fábrica.</p></div>
-      <div class="pub revelar"><div>🍽️</div><h3>Restaurantes</h3><p>Mais produtividade e segurança na cozinha profissional.</p></div>
-      <div class="pub revelar"><div>💈</div><h3>Salões e barbearias</h3><p>Tesouras afiadas para cortes precisos.</p></div>
-      <div class="pub revelar"><div>💅</div><h3>Manicures</h3><p>Alicates que cortam macio e duram mais.</p></div>
-    </div>
-  </div>
-</section>
+    <span class="tag">Por que a Cronos</span>
+    <h2 class="section-title" id="porque-title">Por que escolher a Cronos Afiações</h2>
+    <p class="section-subtitle">Experiência, cuidado e transparência no cuidado com suas ferramentas.</p>
 
-<!-- DEPOIMENTOS -->
-<section id="depoimentos">
-  <div class="container">
-    <div class="titulo revelar">
-      <span class="tag">Depoimentos</span>
-      <h2>O que dizem nossos clientes</h2>
-    </div>
-    <div class="depo-grid">
-      <div class="depo revelar">
-        <div class="estrelas">★★★★★</div>
-        <p>Escreva aqui um depoimento real de cliente sobre a qualidade da afiação.</p>
-        <strong>Nome do cliente</strong><small>Bairro, BH</small>
+    <div class="escolher-grid">
+      <div class="escolher-card">
+        <div class="icon" aria-hidden="true">⭐</div>
+        <h3>Mais de 25 anos de experiência</h3>
+        <p>Tradição e know-how no trabalho com alicates e ferramentas de corte.</p>
       </div>
-      <div class="depo revelar">
-        <div class="estrelas">★★★★★</div>
-        <p>Escreva aqui um depoimento real de um restaurante ou profissional atendido.</p>
-        <strong>Nome do cliente</strong><small>Restaurante</small>
+      <div class="escolher-card">
+        <div class="icon" aria-hidden="true">🎯</div>
+        <h3>Especialização em alicates</h3>
+        <p>Foco no cuidado com alicates de cutícula, o instrumento essencial da manicure.</p>
       </div>
-      <div class="depo revelar">
-        <div class="estrelas">★★★★★</div>
-        <p>Escreva aqui um depoimento real de uma manicure ou cabeleireiro.</p>
-        <strong>Nome do cliente</strong><small>Salão de beleza</small>
+      <div class="escolher-card">
+        <div class="icon" aria-hidden="true">🤝</div>
+        <h3>Atendimento próximo</h3>
+        <p>Comunicação direta pelo WhatsApp, sem burocracia.</p>
+      </div>
+      <div class="escolher-card">
+        <div class="icon" aria-hidden="true">💰</div>
+        <h3>Preços claros</h3>
+        <p>Valores transparentes e comunicados desde o primeiro contato.</p>
+      </div>
+      <div class="escolher-card">
+        <div class="icon" aria-hidden="true">🚚</div>
+        <h3>Conveniência</h3>
+        <p>Buscamos e entregamos no seu endereço, conforme as condições de atendimento.</p>
+      </div>
+      <div class="escolher-card">
+        <div class="icon" aria-hidden="true">🔧</div>
+        <h3>Cuidado com as ferramentas</h3>
+        <p>Cada peça é tratada com respeito ao ângulo e ao material original.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="faq" id="faq">
+<section class="faq" id="faq" aria-labelledby="faq-title">
   <div class="container">
-    <div class="titulo revelar">
-      <span class="tag">Dúvidas</span>
-      <h2>Perguntas frequentes</h2>
-    </div>
+    <span class="tag">Dúvidas</span>
+    <h2 class="section-title" id="faq-title">Perguntas frequentes</h2>
+    <p class="section-subtitle">Respostas sobre preços, coleta, entrega e pagamento.</p>
+
     <div class="faq-lista">
-      <div class="faq-item revelar">
-        <button class="faq-q">Quais regiões vocês atendem?</button>
-        <div class="faq-a"><p>Fazemos busca e entrega em Belo Horizonte. Consulte pelo WhatsApp a disponibilidade para o seu bairro.</p></div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Quanto custa afiar um alicate de cutícula?</button>
+        <div class="faq-a"><p>A afiação de alicate de cutícula custa R$ 15 por alicate. O reparo da ponta está incluído no serviço.</p></div>
       </div>
-      <div class="faq-item revelar">
-        <button class="faq-q">A coleta tem custo?</button>
-        <div class="faq-a"><p>Informe aqui a sua regra de frete (ex.: coleta grátis acima de X peças).</p></div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">O reparo da ponta do alicate está incluído?</button>
+        <div class="faq-a"><p>Sim. O reparo da ponta do alicate está incluído no valor da afiação.</p></div>
       </div>
-      <div class="faq-item revelar">
-        <button class="faq-q">Em quanto tempo recebo minhas peças?</button>
-        <div class="faq-a"><p>Informe aqui o prazo médio de entrega após a coleta.</p></div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Como funciona a coleta e a entrega?</button>
+        <div class="faq-a"><p>Você fala conosco pelo WhatsApp, informa a quantidade de peças e o bairro. Verificamos a disponibilidade e combinamos a coleta. Suas ferramentas são afiadas e devolvidas, preferencialmente no dia seguinte.</p></div>
       </div>
-      <div class="faq-item revelar">
-        <button class="faq-q">Vocês afiam facas japonesas e de cerâmica?</button>
-        <div class="faq-a"><p>Informe aqui quais tipos de lâmina vocês trabalham. Na dúvida, mande uma foto da peça pelo WhatsApp.</p></div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Quando o frete é grátis?</button>
+        <div class="faq-a"><p>Pedidos com mais de 10 alicates têm coleta e entrega grátis. Para pedidos com menos de 5 peças, a coleta está restrita às regiões próximas ao bairro Castelo, em Belo Horizonte.</p></div>
       </div>
-      <div class="faq-item revelar">
-        <button class="faq-q">Quais as formas de pagamento?</button>
-        <div class="faq-a"><p>Informe aqui as formas aceitas (Pix, cartão, dinheiro).</p></div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Qual é o prazo de entrega?</button>
+        <div class="faq-a"><p>O prazo preferencial é o dia seguinte à coleta, conforme agendamento e disponibilidade.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Quais bairros são atendidos?</button>
+        <div class="faq-a"><p>Atendemos Belo Horizonte. Para pedidos com mais de 10 alicates, a coleta e entrega são grátis. Para pedidos menores, a coleta pode estar restrita a regiões próximas ao bairro Castelo. Consulte a disponibilidade para o seu bairro pelo WhatsApp.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Quais são os horários?</button>
+        <div class="faq-a"><p>Coleta e entrega: das 8h às 16h, de segunda a domingo. Atendimento pelo WhatsApp: até as 18h.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Quais formas de pagamento são aceitas?</button>
+        <div class="faq-a"><p>Aceitamos Pix, dinheiro, cartão de débito e cartão de crédito para compras acima de R$ 200. As condições e eventuais taxas de cartão devem ser consultadas no momento do atendimento.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Como solicitar a afiação?</button>
+        <div class="faq-a"><p>Basta chamar no WhatsApp, informar a quantidade de peças, o bairro e o período preferido para coleta. O agendamento está sujeito à confirmação.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">A Cronos afia outros tipos de ferramentas?</button>
+        <div class="faq-a"><p>Sim. Além de alicates de cutícula, afiamos tesouras de cabelo (R$ 40), tesouras comuns (a partir de R$ 10), facas (R$ 8 a R$ 15), espátulas (R$ 5) e fazemos troca de mola (Mundial: R$ 8; paralela: R$ 5). Na dúvida, mande uma foto pelo WhatsApp.</p></div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final" aria-labelledby="cta-title">
+  <div class="container">
+    <h2 id="cta-title">Seus alicates prontos para voltar à rotina.</h2>
+    <p>Fale com a Cronos Afiações, consulte as condições de coleta no seu bairro e combine seu atendimento.</p>
+    <a href="https://wa.me/5531989390637?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cronos%20Afi%C3%A7%C3%B5es%20e%20gostaria%20de%20afiar%20meus%20alicates.%20Poderia%20me%20informar%20como%20funciona%20a%20coleta%20no%20meu%20bairro?" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">Falar com a Cronos pelo WhatsApp</a>
+    <p class="horarios">Coleta e entrega: 8h às 16h (seg. a dom.) • WhatsApp: até as 18h • Belo Horizonte — MG</p>
   </div>
 </section>
 
 <!-- CONTATO -->
-<section id="contato">
-  <div class="container contato-grid">
-    <div class="info revelar">
-      <div>
-        <span class="tag">Contato</span>
-        <h2 style="font-size:2.3rem;color:var(--escuro);margin-bottom:10px">Agende sua coleta</h2>
-        <p style="color:#666">Fale com a gente e deixe suas ferramentas com corte de verdade.</p>
-      </div>
-      <div class="info-box"><div>📍</div><div><h4>Área de atendimento</h4><p>Busca e entrega em Belo Horizonte – MG</p></div></div>
-      <div class="info-box"><div>📲</div><div><h4>WhatsApp</h4><p>(31) 98939-0637</p></div></div>
-      <div class="info-box"><div>🕒</div><div><h4>Horário</h4><p>Seg. a Sex.: 08h às 18h • Sáb.: 08h às 12h</p></div></div>
-      <div class="mapa"><iframe src="https://www.google.com/maps?q=Belo+Horizonte+MG&output=embed" loading="lazy" title="Mapa"></iframe></div>
-    </div>
+<section class="contato" id="contato" aria-labelledby="contato-title">
+  <div class="container">
+    <span class="tag">Contato</span>
+    <h2 class="section-title" id="contato-title">Fale com a Cronos</h2>
+    <p class="section-subtitle">Atendimento pelo WhatsApp é a forma mais rápida de solicitar a afiação.</p>
 
-    <form id="form" class="revelar">
-      <h3>Solicite seu orçamento</h3>
-      <p>Preencha e envie direto pelo WhatsApp.</p>
-      <div class="campo"><label>Nome</label><input type="text" id="nome" required placeholder="Seu nome"></div>
-      <div class="duo">
-        <div class="campo"><label>Bairro</label><input type="text" id="bairro" required placeholder="Ex.: Savassi"></div>
-        <div class="campo"><label>Tipo de cliente</label>
-          <select id="tipo"><option>Residencial</option><option>Restaurante</option><option>Salão / Barbearia</option><option>Manicure / Podologia</option><option>Outro</option></select>
+    <div class="contato-grid">
+      <div class="contato-info">
+        <div class="info-item">
+          <div class="info-icon" aria-hidden="true">📲</div>
+          <div>
+            <h4>WhatsApp</h4>
+            <a href="https://wa.me/5531989390637" target="_blank" rel="noopener">(31) 98939-0637</a>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon" aria-hidden="true">📍</div>
+          <div>
+            <h4>Área de atendimento</h4>
+            <p>Belo Horizonte — MG (bairro Castelo como base)</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon" aria-hidden="true">🕒</div>
+          <div>
+            <h4>Horários</h4>
+            <p>Coleta e entrega: 8h às 16h (seg. a dom.)<br>WhatsApp: até as 18h</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon" aria-hidden="true">💳</div>
+          <div>
+            <h4>Pagamento</h4>
+            <p>Pix, dinheiro, débito e crédito (acima de R$ 200)</p>
+          </div>
+        </div>
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps?q=Bairro+Castelo,+Belo+Horizonte,+MG&output=embed" loading="lazy" title="Mapa do bairro Castelo, Belo Horizonte" width="100%" height="280" style="border:0;border-radius:10px"></iframe>
         </div>
       </div>
-      <div class="campo"><label>O que deseja afiar?</label>
-        <select id="item"><option>Facas de cozinha</option><option>Facas profissionais</option><option>Tesouras</option><option>Tesouras de cabeleireiro</option><option>Alicates de cutícula</option><option>Outras ferramentas</option><option>Vários itens</option></select>
+
+      <div style="background:var(--cinza-50);padding:2rem;border-radius:var(--radius-lg);text-align:center;align-self:start">
+        <div style="font-size:3.5rem;margin-bottom:1rem" aria-hidden="true">💅</div>
+        <h3 style="font-size:1.2rem;color:var(--azul-escuro);margin-bottom:0.5rem">Pronto para afiar seus alicates?</h3>
+        <p style="color:var(--cinza-500);font-size:0.9rem;margin-bottom:1.5rem">Chame no WhatsApp e solicite a afiação do seu alicate de cutícula por R$ 15.</p>
+        <a href="https://wa.me/5531989390637?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cronos%20Afi%C3%A7%C3%B5es%20e%20gostaria%20de%20afiar%20meus%20alicates.%20Poderia%20me%20informar%20como%20funciona%20a%20coleta%20no%20meu%20bairro?" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener" style="width:100%">Solicitar afiação pelo WhatsApp</a>
+        <p style="font-size:0.8rem;color:var(--cinza-500);margin-top:1rem">Coleta e entrega mediante agendamento e condições.</p>
       </div>
-      <div class="campo"><label>Quantidade aproximada</label><input type="number" id="qtd" min="1" value="1"></div>
-      <div class="campo"><label>Observações</label><textarea id="obs" rows="3" placeholder="Ex.: 3 facas e 2 tesouras"></textarea></div>
-      <button type="submit" class="btn">📲 Enviar pelo WhatsApp</button>
-    </form>
+    </div>
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
-<footer>
+<footer class="footer">
   <div class="container">
-    <div class="foot-grid">
-      <div>
-        <a href="#" class="logo"><img src="img/logo.png" alt="Cronos Afiações" style="height:48px"></a>
-        <p style="margin-top:14px;max-width:340px">Afiação profissional de facas, tesouras e alicates. Busca e entrega em Belo Horizonte.</p>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo" aria-label="Cronos Afiações">
+          <img src="img/logo.png" alt="Cronos Afiações" width="140" height="44">
+        </a>
+        <p style="margin-top:0.75rem;max-width:300px">Afiação profissional de alicates de cutícula, tesouras, facas e ferramentas. Coleta e entrega em Belo Horizonte.</p>
       </div>
-      <div>
-        <h4>Navegação</h4>
-        <ul><li><a href="#sobre">Sobre</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#como">Como funciona</a></li><li><a href="#contato">Contato</a></li></ul>
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <a href="#servicos">Alicate de cutícula</a>
+        <a href="#servicos">Tesouras</a>
+        <a href="#servicos">Facas</a>
+        <a href="#servicos">Espátulas</a>
+        <a href="#servicos">Troca de mola</a>
       </div>
-      <div>
-        <h4>Redes</h4>
-        <ul><li><a href="https://instagram.com/cronosafiacoes" target="_blank">Instagram</a></li><li><a href="https://wa.me/5531989390637" target="_blank">WhatsApp</a></li></ul>
+      <div class="footer-col">
+        <h4>Informações</h4>
+        <a href="#como">Como funciona</a>
+        <a href="#coleta">Coleta e entrega</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <a href="https://wa.me/5531989390637" target="_blank" rel="noopener">(31) 98939-0637</a>
+        <p>Belo Horizonte — MG</p>
+        <p>Coleta e entrega: 8h às 16h</p>
+        <p>WhatsApp: até as 18h</p>
       </div>
     </div>
-    <div class="copy">© <span id="ano"></span> Cronos Afiações • Belo Horizonte – MG</div>
+    <div class="footer-bottom">
+      © <span id="ano">2026</span> Cronos Afiações • Belo Horizonte — MG. Todos os direitos reservados.
+    </div>
   </div>
 </footer>
 
-<!-- WHATS FLUTUANTE -->
-<a href="https://wa.me/5531989390637?text=Olá!%20Vim%20pelo%20site." class="whats" target="_blank" aria-label="WhatsApp">
-  <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.5.7 4.9 2 7L3 29l6.6-2.2c2 1.1 4.2 1.7 6.4 1.7 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1.3 1.3-3.8-.3-.4c-1.1-1.8-1.7-3.8-1.7-5.9C5.3 9.8 10.1 5 16 5s10.7 4.8 10.7 10.6S21.9 26.2 16 26.2zm5.9-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+<!-- WhatsApp Flutuante -->
+<a href="https://wa.me/5531989390637?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cronos%20Afi%C3%A7%C3%B5es." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.5.7 4.9 2 7L3 29l6.6-2.2c2 1.1 4.2 1.7 6.4 1.7 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1.3 1.3-3.8-.3-.4c-1.1-1.8-1.7-3.8-1.7-5.9C5.3 9.8 10.1 5 16 5s10.7 4.8 10.7 10.6S21.9 26.2 16 26.2zm5.9-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
 </a>
 
-<script>
-  // Header ao rolar
-  const topo = document.getElementById('topo');
-  window.addEventListener('scroll', () => topo.classList.toggle('rolou', window.scrollY > 50));
-
-  // Menu mobile
-  const hamb = document.getElementById('hamb'), menu = document.getElementById('menu');
-  hamb.addEventListener('click', () => { menu.classList.toggle('aberto'); hamb.textContent = menu.classList.contains('aberto') ? '✕' : '☰'; });
-  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('aberto'); hamb.textContent = '☰'; }));
-
-  // Animação ao rolar
-  const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('ativo'); obs.unobserve(e.target); } }), { threshold: .15 });
-  document.querySelectorAll('.revelar').forEach(el => obs.observe(el));
-
-  // Contadores
-  const cObs = new IntersectionObserver(es => es.forEach(e => {
-    if (!e.isIntersecting) return;
-    const el = e.target, alvo = +el.dataset.alvo; let atual = 0;
-    const passo = Math.ceil(alvo / 80);
-    const t = setInterval(() => { atual += passo; if (atual >= alvo) { atual = alvo; clearInterval(t); } el.textContent = '+' + atual.toLocaleString('pt-BR'); }, 20);
-    cObs.unobserve(el);
-  }), { threshold: .5 });
-  document.querySelectorAll('.contador').forEach(c => cObs.observe(c));
-
-  // FAQ
-  document.querySelectorAll('.faq-q').forEach(q => q.addEventListener('click', () => {
-    const item = q.parentElement, resp = item.querySelector('.faq-a');
-    document.querySelectorAll('.faq-item').forEach(i => { if (i !== item) { i.classList.remove('ativo'); i.querySelector('.faq-a').style.maxHeight = null; } });
-    item.classList.toggle('ativo');
-    resp.style.maxHeight = item.classList.contains('ativo') ? resp.scrollHeight + 'px' : null;
-  }));
-
-  // Formulário -> WhatsApp
-  document.getElementById('form').addEventListener('submit', e => {
-    e.preventDefault();
-    const v = id => document.getElementById(id).value;
-    const msg = `Olá! Gostaria de um orçamento de afiação.%0A%0A*Nome:* ${v('nome')}%0A*Bairro:* ${v('bairro')}%0A*Tipo:* ${v('tipo')}%0A*Item:* ${v('item')}%0A*Quantidade:* ${v('qtd')}%0A*Obs.:* ${v('obs')}`;
-    window.open(`https://wa.me/5531989390637?text=${msg}`, '_blank');
-  });
-
-  document.getElementById('ano').textContent = new Date().getFullYear();
-</script>
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"55d6c902a8a143b1ab6c5051b2a1f75b","spa":2}' crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
